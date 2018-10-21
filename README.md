@@ -98,3 +98,13 @@ This creates a session with ID 101 and profile with ID 10. You can view this pro
 ```
 https://localhost:8181/cxs/profiles/10/sessions/
 ```
+
+## Installing Unomi as a Service
+You can install Unomi as a service using Karaf's [Service Wrapper](http://karaf.apache.org/manual/latest/#_service_wrapper).
+
+From the Karaf command line:
+```
+karaf@root()> feature:install wrapper
+karaf@root()> wrapper:install
+```
+The output from the `wrapper:install` command will include instructions for finishing the installation and starting/stoping Karaf. 
