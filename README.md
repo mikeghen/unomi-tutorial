@@ -86,7 +86,7 @@ python new_profile.py
 ```
 This creates a profile with ID 10. You can view this profile with a [GET /profile endpoint](https://unomi.incubator.apache.org/rest-api-doc/#-1185500428) in the browser:
 ```
-https://localhost:8181/cxs/profile/10
+http://localhost:8181/cxs/profile/10
 ```
 
 ### Create a New Profile and Session
@@ -96,7 +96,7 @@ python new_profile_and_session.py
 ```
 This creates a session with ID 101 and profile with ID 10. You can view this profile with a [GET /profile/{profile_id}/sessions endpoint](https://unomi.incubator.apache.org/rest-api-doc/#1764110248) in the browser:
 ```
-https://localhost:8181/cxs/profiles/10/sessions/
+http://localhost:8181/cxs/profiles/10/sessions/
 ```
 
 ### Create a New Rule
@@ -106,11 +106,11 @@ python new_rule.py
 ```
 This creates a rule with ID eligibilityRule and a profile with ID 10. You can view this rule with a [GET /rule/{rule_id} endpoint](https://unomi.incubator.apache.org/rest-api-doc/#-1505954579) in the browser:
 ```
-https://localhost:8181/cxs/rules/eligibilityRule/
+http://localhost:8181/cxs/rules/eligibilityRule/
 ```
 and you can view the profile which has been marked as eligible = "yes":
 ```
-https://localhost:8181/cxs/profile/10
+http://localhost:8181/cxs/profile/10
 ```
 
 ## Installing Unomi as a Service
