@@ -99,6 +99,20 @@ This creates a session with ID 101 and profile with ID 10. You can view this pro
 https://localhost:8181/cxs/profiles/10/sessions/
 ```
 
+### Create a New Rule
+Run the python file to create a new rule (use Python 3):
+```
+python new_rule.py
+```
+This creates a rule with ID eligibilityRule and a profile with ID 10. You can view this rule with a [GET /rule/{rule_id} endpoint](https://unomi.incubator.apache.org/rest-api-doc/#-1505954579) in the browser:
+```
+https://localhost:8181/cxs/rules/eligibilityRule/
+```
+and you can view the profile which has been marked as eligible = "yes":
+```
+https://localhost:8181/cxs/profile/10
+```
+
 ## Installing Unomi as a Service
 You can install Unomi as a service using Karaf's [Service Wrapper](http://karaf.apache.org/manual/latest/#_service_wrapper).
 
@@ -107,4 +121,4 @@ From the Karaf command line:
 karaf@root()> feature:install wrapper
 karaf@root()> wrapper:install
 ```
-The output from the `wrapper:install` command will include instructions for finishing the installation and starting/stoping Karaf. 
+The output from the `wrapper:install` command will include instructions for finishing the installation and starting/stoping Karaf.

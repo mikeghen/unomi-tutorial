@@ -31,7 +31,7 @@ session = {
 }
 
 # Create or update profile
-r = post('http://localhost:8181/cxs/profiles/'
+r = post('http://localhost:8181/cxs/profiles/',
 auth=('karaf','karaf'),
 json =profile)
 print(r)
