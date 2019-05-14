@@ -4,7 +4,7 @@ from datetime import datetime
 Make a request to Unomi to create a profile with ID = 10
 """
 profile = {
-    "itemId":"10",
+    "itemId":"101",
     "itemType":"profile",
     "version":None,
     "properties": {
@@ -19,7 +19,7 @@ profile = {
 }
 
 session = {
-    "itemId": "10",
+    "itemId": "s101",
     "itemType":"session",
     "scope":None,
     "version":1,
@@ -32,16 +32,16 @@ session = {
 
 # Create or update profile
 r = post('http://localhost:8181/cxs/profiles/',
-auth=('karaf','karaf'),
-json =profile)
+         auth=('karaf','karaf'),
+         json=profile)
 print(r)
 print(r.content)
 
 
 # Create session
 r = post('http://localhost:8181/cxs/profiles/sessions/10',
-    auth=('karaf', 'karaf'),
-    json=session)
+         auth=('karaf', 'karaf'),
+         json=session)
 
 print(r)
 print(r.content)

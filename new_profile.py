@@ -1,4 +1,4 @@
-from requests import request
+import requests
 
 """
 Make a request to Unomi to create a profile with ID = 10

@@ -18,7 +18,7 @@ json ={
         {
           "parameterValues": {
             "propertyName": "properties.annualIncome",
-            "comparisonOperator": "greaterThan",
+            "comparisonOperator": "lessThan",
             "propertyValueInt": 12000
           },
           "type": "profilePropertyCondition"
