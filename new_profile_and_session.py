@@ -1,7 +1,7 @@
 from requests import post
 from datetime import datetime
 """
-Make a request to Unomi to create a profile with ID = 10
+Make a request to Unomi to create a profile with ID = 101
 """
 profile = {
     "itemId":"101",
@@ -17,6 +17,8 @@ profile = {
     "mergedWith":None,
     "consents":{}
 }
+
+profile_id = 101
 
 session = {
     "itemId": "s101",
