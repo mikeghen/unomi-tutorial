@@ -18,6 +18,8 @@ profile = {
     "consents":{}
 }
 
+profile_id = 101
+
 session = {
     "itemId": "s101",
     "itemType":"session",
